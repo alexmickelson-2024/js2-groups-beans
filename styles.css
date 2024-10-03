@@ -57,11 +57,17 @@ footer li {
 h1 {
   text-align: center;
 }
+#error{
+  text-align: center;
+  color: red;
+  font-size: 20em;
+}
 
 .card-container {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   gap: 1em;
-  grid-template-columns: repeat(auto-fill, minmax(25em, 0));
+  grid-template-columns: repeat(auto-fill, minmax(0, 25em));
   justify-content: center;
 }
 
