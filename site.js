@@ -33,7 +33,7 @@ function getCount() {
     }
     return count;
   } else {
-    return 0;
+    return -1;
   }
 }
 
@@ -142,12 +142,19 @@ const buildMain = () => {
     returnString += `<h1 id="error">CEASE YOUR FOOLISH ACTIONS CHILD!</h1>`;
   } else {
     returnString += `<article class="card-container">`;
-    console.log("Offset + count = " + (offset + count))
-    const animalSlice = animals.slice(offset, offset + count);
-    for (let z of animalSlice) {
-      returnString += buildAnimalCard(z);
+    if (offset > 0 && count > 0) {
+      const animalSlice = animals.slice(offset, Number(offset) + Number(count));
+      for (let z of animalSlice) {
+        returnString += buildAnimalCard(z);
+      }
+      returnString += "</article>";
     }
-    returnString += "</article>";
+    else {
+      for (let z of animals) {
+        returnString += buildAnimalCard(z);
+      }
+      returnString += "</article>";
+    }
   }
   returnString += "</main>";
   return returnString;

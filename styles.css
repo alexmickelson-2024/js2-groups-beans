@@ -69,6 +69,7 @@ h1 {
   gap: 1em;
   grid-template-columns: repeat(auto-fill, minmax(0, 25em));
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
