@@ -47,6 +47,11 @@ footer li {
   flex-direction: row;
   /* my children will be laid out horizontally */
   flex: 1;
+  height: 100vh;
+}
+
+#navbar{
+  height: 100vh;
 }
 
 .main-container {
@@ -54,6 +59,7 @@ footer li {
   flex-direction: column;
   flex: 1;
   /*As a child of another flex parent, I will grow.*/
+  height: 100vh;
 }
 
 h1 {
@@ -73,6 +79,8 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(0, 25em));
   justify-content: center;
   flex-wrap: wrap;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .card {
@@ -94,7 +102,6 @@ h1 {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
   object-fit: cover;
-  max-height: 13em;
 }
 
 .card-text {
