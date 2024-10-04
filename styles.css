@@ -109,26 +109,30 @@ h1 {
   #navbar {
     display: none;
   }
-  body{
+
+  body {
     margin: 0;
   }
-  #main-body{
+
+  #main-body {
     display: flex;
     flex-direction: column;
     overflow: scroll;
     align-items: center;
   }
-  footer{
+
+  footer {
     display: flex;
   }
 
-  .card{
+  .card {
     display: flex;
     justify-content: center;
   }
-.page-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
