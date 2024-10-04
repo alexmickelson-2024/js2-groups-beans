@@ -136,7 +136,7 @@ function buildAnimalCard(animal) {
 }
 
 const buildMain = () => {
-  let returnString = `<main>
+  let returnString = `<main id="main-body">
           <h1>Hello Class</h1>`;
   if (offset == -1 || count == 0) {
     returnString += `<h1 id="error">CEASE YOUR FOOLISH ACTIONS CHILD!</h1>`;
@@ -168,7 +168,7 @@ function buildHeader() {
 
 const buildLeftNav = () => {
   return `      <nav>
-        <ul>
+        <ul id="navbar">
           <li>Home</li>
           <li>Page 1</li>
           <li>Page 2</li>
