@@ -167,8 +167,8 @@ function buildHeader() {
 }
 
 const buildLeftNav = () => {
-  return `      <nav>
-        <ul id="navbar">
+  return `      <nav id="navbar">
+        <ul>
           <li>Home</li>
           <li>Page 1</li>
           <li>Page 2</li>
