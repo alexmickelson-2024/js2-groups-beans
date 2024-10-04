@@ -16,7 +16,7 @@ function getOffset() {
   }
 }
 
-const offset = getOffset();
+const offset = Number(getOffset());
 console.log("offset = " + offset);
 
 function getCount() {
@@ -38,7 +38,7 @@ function getCount() {
 }
 
 
-const count = getCount();
+const count = Number(getCount());
 console.log("count = " + count);
 
 const animals = [
@@ -143,7 +143,7 @@ const buildMain = () => {
   } else {
     returnString += `<article class="card-container">`;
     if (offset > 0 && count > 0) {
-      const animalSlice = animals.slice(offset, Number(offset) + Number(count));
+      const animalSlice = animals.slice(offset, offset + count);
       for (let z of animalSlice) {
         returnString += buildAnimalCard(z);
       }
